@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies & build UI
         run: |
-          cd src/ui
+          cd frontend
           npm install
           npm run build
           cd ../..
@@ -51,3 +51,4 @@ jobs:
           app-name: tailorcompassweb2-ftevd3c9babkbgem
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: release.zip
+
